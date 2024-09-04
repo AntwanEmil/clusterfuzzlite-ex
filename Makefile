@@ -23,7 +23,7 @@ $(info $$LIB_FUZZING_ENGINE is [${LIB_FUZZING_ENGINE}])
 # OSS-Fuzz will use different -fsanitize=* flags for different builds (asan, ubsan, msan, ...)
 
 # You may add extra compiler flags like this:
-CXXFLAGS += -std=c++11 -fsanitize-coverage=trace-pc-guard,indirect-calls,trace-cmp
+CXXFLAGS += -std=c++11 -fprofile-instr-generate -fcoverage-mapping
 
 all: do_stuff_unittest do_stuff_fuzzer 
 
