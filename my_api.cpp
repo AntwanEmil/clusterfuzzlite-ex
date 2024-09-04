@@ -5,7 +5,6 @@
 #include "my_api.h"
 
 #include <vector>
-
 // Do some computations with 'str', return the result.
 // This function contains a bug. Can you spot it?
 size_t DoStuff(const std::string &str) {
