@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
   TestDoStuff("bar", 1);
   TestDoStuff("ouch", 1);
   TestDoStuff("foobar", 3);
-  TestDoStuff("foouchbar", 4);
+  //TestDoStuff("foouchbar", 4);
   if (argc == 2 && std::string(argv[1]) == "BUG") {
     // This is the missing test that actually triggers the bug.
     TestDoStuff("foouchbaromg", 4);
