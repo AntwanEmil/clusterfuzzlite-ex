@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 ################################################################################
-
+make clean
 make -j$(nproc) all    # Build the fuzz targets.
 # export LIB_FUZZING_ENGINE=${LIB_FUZZING_ENGINE}
 # cmake .
